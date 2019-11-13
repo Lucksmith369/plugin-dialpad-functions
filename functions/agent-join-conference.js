@@ -11,5 +11,7 @@ exports.handler = function(context, event, callback) {
     console.log(event);
 
     twiml.dial().conference(event.conferenceSid);
-    callback(null, twiml);
+    callback(null);
 };
+
+
